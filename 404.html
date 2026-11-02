@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Card not found</title>
+<meta name="description" content="Digital invitation cards.">
+<meta name="robots" content="noindex">
+<style>
+  :root { --bg: #fbf6ec; --ink: #4a2c1a; --muted: #8a6a52; --gold: #b8892d; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #1d1510; --ink: #f3e6d0; --muted: #b9a088; --gold: #d8ad55; } }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body { display: grid; place-items: center; padding: 24px 16px; background: var(--bg); color: var(--ink);
+         font: 16px/1.6 Georgia, "Times New Roman", serif; text-align: center; }
+  h1 { margin: 0 0 8px; font-size: clamp(2rem, 8vw, 3rem); font-weight: normal; letter-spacing: .02em; }
+  h1 span { color: var(--gold); }
+  p { margin: 0; color: var(--muted); }
+  .rule { width: 72px; height: 1px; margin: 20px auto; background: var(--gold); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Card<span>Bazaar</span></h1>
+  <div class="rule"></div>
+  <p>This card could not be found.<br>Please check the link you received.</p>
+</main>
+</body>
+</html>
