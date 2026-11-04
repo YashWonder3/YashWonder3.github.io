@@ -3,27 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CardBazaar</title>
-<meta name="description" content="Digital invitation cards.">
-<meta name="robots" content="noindex">
-<style>
-  :root { --bg: #fbf6ec; --ink: #4a2c1a; --muted: #8a6a52; --gold: #b8892d; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #1d1510; --ink: #f3e6d0; --muted: #b9a088; --gold: #d8ad55; } }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; height: 100%; }
-  body { display: grid; place-items: center; padding: 24px 16px; background: var(--bg); color: var(--ink);
-         font: 16px/1.6 Georgia, "Times New Roman", serif; text-align: center; }
-  h1 { margin: 0 0 8px; font-size: clamp(2rem, 8vw, 3rem); font-weight: normal; letter-spacing: .02em; }
-  h1 span { color: var(--gold); }
-  p { margin: 0; color: var(--muted); }
-  .rule { width: 72px; height: 1px; margin: 20px auto; background: var(--gold); }
-</style>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
+<title>CardBazaar - Digital Invitations</title>
+<meta name="description" content="Wedding and celebration invitations, crafted as a royal scroll you open on your phone.">
+<meta property="og:title" content="CardBazaar - Digital Invitations">
+<meta property="og:description" content="Wedding and celebration invitations, crafted as a royal scroll you open on your phone.">
+<meta property="og:url" content="https://www.cardbazaar.in/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://www.cardbazaar.in/">
+<meta name="theme-color" content="#3A161B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
 </head>
 <body>
-<main>
-  <h1>Card<span>Bazaar</span></h1>
-  <div class="rule"></div>
-  <p>Digital invitation cards.<br>Open the personal link you received to view your card.</p>
+<div class="rod" aria-hidden="true"></div>
+<main class="scroll">
+  <div class="frame">
+    <svg class="monogram" viewBox="0 0 220 158" role="img" aria-label="CardBazaar">
+      <circle cx="80" cy="79" r="70" fill="none" stroke="#B4664A" stroke-width="2"/>
+      <circle cx="140" cy="79" r="70" fill="none" stroke="#B4664A" stroke-width="2"/>
+      <text x="64" y="100" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="62" font-weight="600" fill="#B4664A">C</text>
+      <text x="157" y="100" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="62" font-weight="600" fill="#B4664A">B</text>
+      <path d="M110 92c-8-5.5-12.5-9.5-12.5-15 0-4 3-6.5 6.3-6.5 2.4 0 4.7 1.5 6.2 4 1.5-2.5 3.8-4 6.2-4 3.3 0 6.3 2.5 6.3 6.5 0 5.5-4.5 9.5-12.5 15z" fill="#B4664A"/>
+    </svg>
+
+    <p class="eyebrow">Digital Invitations</p>
+    <h1>Card<span>Bazaar</span></h1>
+    <div class="divider" aria-hidden="true"><i></i></div>
+    <p class="lead">Wedding and celebration invitations, crafted as a royal scroll you open on your phone.</p>
+
+    <section class="note" aria-labelledby="received">
+      <h2 id="received">Received an invitation?</h2>
+      <p>Open the personal link that was shared with you. It looks like this:</p>
+      <span class="example"><span>www.cardbazaar.in/</span><wbr><span>name-weds-name</span></span>
+    </section>
+
+    <ul class="chips" aria-label="Every card includes">
+      <li>A short film</li>
+      <li>Venue &amp; travel maps</li>
+      <li>Blessings for the couple</li>
+    </ul>
+  </div>
 </main>
+<div class="rod" aria-hidden="true"></div>
+<footer>
+  <span>CardBazaar</span>
+  © 2026 · cardbazaar.in
+</footer>
 </body>
 </html>

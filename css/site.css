@@ -1,0 +1,51 @@
+/* CardBazaar home: same royal scroll as the cards. No third-party assets. */
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500 600;font-display:swap;src:url(/fonts/cormorant-garamond.woff2) format('woff2')}
+@font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/lora-400.woff2) format('woff2')}
+@font-face{font-family:'Lora';font-style:italic;font-weight:400;font-display:swap;src:url(/fonts/lora-400-italic.woff2) format('woff2')}
+
+:root{--love:#7E2A33;--royal:#3A161B;--royal-2:#55212A;--cream:#FAF5EE;--paper:#FFFDF8;--ink:#4A342E;--ink-soft:#7A635B;--terra:#B4664A;--gold:#C19A5B;--serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;--body:'Lora',Georgia,serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{color-scheme:light}
+body{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:28px 0 0;background:radial-gradient(ellipse at top,var(--royal-2),var(--royal) 70%) fixed var(--royal);color:var(--ink);font-family:var(--body);line-height:1.7;font-size:1.02rem;-webkit-font-smoothing:antialiased}
+
+.rod{position:relative;z-index:2;width:min(616px,calc(100% - 4px));height:24px;margin:0 auto;border-radius:12px;flex:none;
+  background:linear-gradient(180deg,#7A5A2A 0%,#E9D29A 30%,#C19A5B 55%,#8A6A35 85%,#5E4420 100%);
+  box-shadow:0 6px 12px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.35)}
+.rod::before,.rod::after{content:"";position:absolute;top:-5px;width:18px;height:34px;border-radius:9px;
+  background:radial-gradient(circle at 40% 35%,#F3E1AE,#C19A5B 45%,#6E5026 100%);box-shadow:0 3px 6px rgba(0,0,0,.45)}
+.rod::before{left:0}.rod::after{right:0}
+
+.scroll{width:min(580px,calc(100% - 30px));margin:-12px auto;padding:12px 16px;position:relative;
+  background:linear-gradient(90deg,rgba(193,154,91,.22),rgba(193,154,91,0) 4%,rgba(193,154,91,0) 96%,rgba(193,154,91,.22)),var(--cream);
+  border-inline:1px solid rgba(193,154,91,.6);box-shadow:0 0 40px rgba(0,0,0,.45)}
+.frame{position:relative;text-align:center;padding:3.4rem 1.6rem 3rem}
+.frame::before{content:"";position:absolute;inset:14px 0;border:1px solid var(--gold);pointer-events:none}
+.frame::after{content:"";position:absolute;inset:20px 6px;border:1px solid rgba(193,154,91,.45);pointer-events:none}
+
+.monogram{display:block;width:150px;height:auto;margin:0 auto 1.4rem}
+.eyebrow{text-transform:uppercase;letter-spacing:.28em;font-size:.72rem;color:var(--terra);margin-bottom:.5rem}
+h1{font-family:var(--serif);font-weight:500;line-height:1.1;font-size:clamp(2.6rem,11vw,3.8rem);color:var(--ink)}
+h1 span{color:var(--terra)}
+h1.compact{font-size:clamp(2.3rem,9vw,3.2rem)}
+.divider{display:flex;align-items:center;justify-content:center;gap:.7rem;margin:1.1rem auto 1.3rem;color:var(--gold)}
+.divider::before,.divider::after{content:"";width:56px;height:1px;background:var(--gold)}
+.divider i{width:7px;height:7px;transform:rotate(45deg);border:1px solid var(--gold)}
+.lead{color:var(--ink-soft);max-width:26rem;margin:0 auto}
+
+.note{background:var(--paper);border:1px solid rgba(193,154,91,.5);border-radius:14px;max-width:26rem;margin:2rem auto 0;padding:1.4rem 1.3rem;box-shadow:0 6px 24px rgba(74,52,46,.06)}
+.note h2{font-family:var(--serif);font-weight:600;font-size:1.35rem;line-height:1.2;color:var(--ink);margin-bottom:.4rem}
+.note p{color:var(--ink-soft);font-size:.93rem}
+.example{display:block;margin-top:.7rem;font-family:var(--serif);font-size:1.08rem;color:var(--terra);text-decoration:underline;text-decoration-color:rgba(180,102,74,.4);text-underline-offset:5px}
+.example span{white-space:nowrap}
+
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:.55rem;justify-content:center;margin-top:1.8rem}
+.chips li{border:1px solid var(--gold);color:var(--ink);border-radius:999px;padding:.4rem 1rem;font-size:.95rem;font-family:var(--serif);font-style:italic;background:var(--paper)}
+
+.btn{display:inline-block;margin-top:1.8rem;background:var(--terra);color:#fff;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem;padding:.85rem 1.9rem;border-radius:999px;text-decoration:none;transition:background .25s}
+.btn:hover{background:#9A5138}
+.btn:focus-visible{outline:2px solid rgba(180,102,74,.45);outline-offset:3px}
+
+footer{text-align:center;padding:2.2rem 1.5rem 2.6rem;font-size:.82rem;color:rgba(250,245,238,.7)}
+footer span{font-family:var(--serif);font-size:1.15rem;color:var(--gold);display:block;margin-bottom:.2rem}
+
+@media(max-width:380px){.frame{padding:3rem 1.1rem 2.6rem}}
